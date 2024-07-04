@@ -8,7 +8,6 @@
 }
 
 #background{
-    background-color: lightblue;
     width: 40%;
 }
 
@@ -111,3 +110,47 @@ body {
     border-color: green;
 }
 
+@media (max-width: 500px) {
+    #page {
+        flex-direction: column;
+    }
+
+    .section {
+        width: 100%;
+        height: auto;
+    }
+
+    #background {
+        width: 100%;
+    }
+
+    #image {
+        height: auto;
+        width: 105%;
+    }
+
+    #header, #input, #create {
+        width: 100%;
+        height: auto;
+        padding-left:8px;
+    }
+
+    #box1, #box2 {
+        width: 100%;
+        height: auto;
+    }
+
+    #inputFields {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #createAccount {
+        width: 100%;
+    }
+}
