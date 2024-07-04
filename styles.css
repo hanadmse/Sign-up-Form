@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'norseFont';
+    src: url('norse-font.otf') format('truetype');
+}
+
 #page {
     display:flex;
 }
@@ -11,11 +16,49 @@
     width: 40%;
 }
 
+#imageContainer {
+    display:flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 
 #image {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    object-fit: cover;
 }
+
+
+/* #logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    background-color: black;
+}*/
+
+#logoContainer {
+    position:absolute;
+    margin-top: 50%;
+    width:100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content: center;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+
+#odin{
+    color:white;
+    align-content: center;
+    font-family: "norseFont";
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
 
 #header, #input, #create {
     width: auto;
